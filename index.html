@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>My Portfolio - Nolinda Moyani</title>
+  <link rel="stylesheet" href="style.css" />
+  <!-- Optionally include a media queries file if needed -->
+  <link rel="stylesheet" href="MediaQueries.css" />
+</head>
+<body>
+  <!-- Desktop Navigation -->
+  <nav id="desktop-nav">
+    <div class="logo">
+      <span class="tagline">Aspiring Software Developer & Data Enthusiast</span>
+    </div>
+    <ul class="nav-links">
+      <li><a href="#about">About</a></li>
+      <li><a href="#experience">Experience</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+  
+  <!-- Hamburger Navigation (for mobile) -->
+  <nav id="hamburger-nav">
+    <div class="logo">Nolinda Moyani</div>
+    <div class="hamburger-menu">
+      <div class="hamburger-icon">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <ul class="menu-links">
+        <li><a href="#about" onclick="toggleMenu()">About</a></li>
+        <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+        <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+        <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+  
+  <!-- Profile Section -->
+  <section id="profile">
+    <div class="section_pic-container">
+      <img src="./Assets/IMG_4583.jpg" alt="Nolinda Moyani Profile Picture" />
+    </div>
+    <div class="section_text">
+      <p>Hello, I'm</p>
+      <h1 class="title">Nolinda Moyani</h1>
+      <p>Software Developer</p>
+    </div>
+    <div id="socials-container">
+      <img src="./Assets/LinkedIn-Emblema.png" alt="LinkedIn" class="icon" onclick="window.open('https://www.linkedin.com/in/nolinda-moyani-aa387b319/', '_blank')" />
+      <img src="./Assets/Github.png" alt="GitHub" class="icon" onclick="window.open('https://github.com/Nolinda', '_blank')" />
+      <img src="./Assets/email-icon.jpg" alt="Email" class="icon" onclick="window.open('mailto:nolindamoyani201@gmail.com')" />
+    </div>
+  </section>
+  
+  <!-- About Section -->
+  <section id="about">
+    <h2>
+      <img src="./Assets/OIP.jpg" alt="About Icon" class="about-icon" />
+      About Me
+    </h2>
+    <p>
+      Hi, I'm <strong>Nolinda Moyani</strong>, a passionate <strong>Software Developer & Data Enthusiast</strong> with a strong background in <strong>C#, SQL, Power BI, UiPath, and Web Development</strong>. I enjoy solving business problems through technology and turning complex data into meaningful insights.
+    </p>
+    <h3>What I Do</h3>
+    <ul>
+      <li><strong>Software Development</strong> Building applications using C#, Java, and web technologies.</li>
+      <li><strong>Data Analysis & BI</strong> Transforming raw data into actionable insights with SQL & Power BI.</li>
+      <li><strong>Automation & RPA</strong> Streamlining processes using UiPath.</li>
+      <li><strong>Cybersecurity Enthusiast</strong> Incorporating security best practices in tech solutions.</li>
+    </ul>
+    <h3>Why Work With Me?</h3>
+    <ul>
+      <li><strong>Resilient & Hardworking</strong> I approach every challenge with a proactive mindset.</li>
+      <li><strong>Detail-Oriented & Analytical</strong> I love digging into data to find trends and solutions.</li>
+      <li><strong>Collaborative & People-Centric</strong> Strong teamwork and communication skills.</li>
+    </ul>
+    <h3>Tech Stack & Skills</h3>
+    <ul>
+      <li><strong>Languages:</strong> C#, Java, SQL, HTML, CSS, JavaScript</li>
+      <li><strong>Tools & Frameworks:</strong> Power BI, UiPath, ASP.NET, React</li>
+      <li><strong>Databases:</strong> SQL Server, MySQL</li>
+      <li><strong>Soft Skills:</strong> Problem-Solving, Business Analysis, Agile Development</li>
+    </ul>
+  </section>
+  
+  <!-- Experience Section -->
+  <section id="experience">
+    <h2>
+      <img src="./Assets/portfolio-vector-icon.jpg" alt="Experience Icon" class="experience-icon" />
+      Experience
+    </h2>
+    <ul>
+      <li>
+        <strong>Student Assistant</strong> North-West University
+        <ul>
+          <li>Selected as a student assistant because I was one of the top 5 students who achieved the highest marks.</li>
+          <li>Assisted faculty and students with administrative tasks, improving workflow efficiency.</li>
+          <li>Provided support in organizing educational events and workshops, enhancing the learning experience.</li>
+          <li>Gained valuable experience in teamwork, communication, and time management.</li>
+        </ul>
+      </li>
+    </ul>
+  </section>
+  
+  <!-- Projects Section -->
+  <section id="projects">
+    <h2>
+        <img src="./Assets/Projects icon.png" alt="Project Icon"class="projects-icon">My Projects</h2>
+    <div class="project">
+      <h3>Telemetry Portal</h3>
+      <p>
+        This project involves creating a CRUD RESTful API to manage telemetry data for NWU Tech Trends, focusing on calculating time and cost savings.
+      </p>
+      <p><strong>Technologies Used:</strong> C#, SQL Server, Azure</p>
+      <a href="https://github.com/Nolinda/CRUD-RESTful-Tech-Trends-Management" target="_blank">View Project</a>
+    </div>
+    <div class="project">
+      <h3>Airbnb Data Analysis</h3>
+      <p>
+        Analyzing Airbnb data for Cape Town, focusing on revenue and booking analysis, particularly in high-rated areas like Observatory and Woodstock.
+      </p>
+      <p><strong>Technologies Used:</strong> SQL, Power BI</p>
+      <a href="https://drive.google.com/file/d/14c84y3jLZ8sFuBeq8iFVCyoM1p1r9N_O/view?usp=sharing" target="_blank">View Project</a>
+    </div>
+    <div class="project">
+      <h3>User Acceptance Testing Automation</h3>
+      <p>
+        Automating UAT processes using UiPath to streamline testing workflows and improve efficiency.
+      </p>
+      <p><strong>Technologies Used:</strong> UiPath, RPA</p>
+      <a href="https://github.com/Nolinda/RPA-User-Acceptance-Testing-UiPath" target="_blank">View Project</a>
+    </div>
+  </section>
+  
+  <!-- Contact Section -->
+  <section id="contact">
+    <h2>
+        <img src="./Assets/Phone logo.png" alt="Phone Icon"class="phone-icon">Contact Me</h2>
+    <form id="contact-form">
+      <input type="text" name="name" placeholder="Your Name" required />
+      <input type="email" name="email" placeholder="Your Email" required />
+      <input type="text" name="subject" placeholder="Subject" required />
+      <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+      <button type="submit" class="btn">Send Message</button>
+    </form>
+  </section>
+  
+  <script src="Script.js"></script>
+</body>
+</html>
